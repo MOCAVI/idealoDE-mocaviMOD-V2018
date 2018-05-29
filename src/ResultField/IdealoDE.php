@@ -1,6 +1,6 @@
 <?php
 
-namespace ElasticExportIdealoDE\ResultField;
+namespace ElasticExportIdealoDEv2\ResultField;
 
 use Cache\Util\Key;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;

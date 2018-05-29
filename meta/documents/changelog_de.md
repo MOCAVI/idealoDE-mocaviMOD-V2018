@@ -1,3 +1,5 @@
+MOCAVI Mod Version v0.1.4 (2018-05-29)
+ElasticExportIdealoDEv2 "v2" wegen Namenskonflikten mit dem orikinal plugin
 
 MOCAVI Mod Version v0.1.3 (2018-05-29)
 Bugfix

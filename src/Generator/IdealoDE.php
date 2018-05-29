@@ -1,13 +1,13 @@
 <?php
 
-namespace ElasticExportIdealoDE\Generator;
+namespace ElasticExportIdealoDEv2\Generator;
 
 use ElasticExport\Helper\ElasticExportCoreHelper;
 use ElasticExport\Helper\ElasticExportPriceHelper;
 use ElasticExport\Helper\ElasticExportShippingHelper;
 use ElasticExport\Helper\ElasticExportStockHelper;
 use ElasticExport\Services\FiltrationService;
-use ElasticExportIdealoDE\Helper\PropertyHelper;
+use ElasticExportIdealoDEv2\Helper\PropertyHelper;
 use Plenty\Modules\DataExchange\Contracts\CSVPluginGenerator;
 use Plenty\Modules\Helper\Services\ArrayHelper;
 use Plenty\Modules\Helper\Models\KeyValue;
@@ -184,12 +184,12 @@ class IdealoDE extends CSVPluginGenerator
 				// Log the amount of the elasticsearch result once
 				if($shardIterator == 1)
 				{
-					$this->getLogger(__METHOD__)->addReference('total', (int)$resultList['total'])->info('ElasticExportIdealoDE::item.esResultAmount');
+					$this->getLogger(__METHOD__)->addReference('total', (int)$resultList['total'])->info('ElasticExportIdealoDEv2::item.esResultAmount');
 				}
 
 				if(count($resultList['error']) > 0)
 				{
-					$this->getLogger(__METHOD__)->addReference('failedShard', $shardIterator)->error('ElasticExportIdealoDE::item.occurredElasticSearchErrors', [
+					$this->getLogger(__METHOD__)->addReference('failedShard', $shardIterator)->error('ElasticExportIdealoDEv2::item.occurredElasticSearchErrors', [
 						'error message' => $resultList['error'],
 					]);
 				}
@@ -340,7 +340,7 @@ class IdealoDE extends CSVPluginGenerator
 			}
 			catch (\Throwable $throwable)
 			{
-				$this->getLogger(__METHOD__)->error('ElasticExportIdealoDE::item.fillRowError', [
+				$this->getLogger(__METHOD__)->error('ElasticExportIdealoDEv2::item.fillRowError', [
 					'error message' => $throwable->getMessage(),
 					'error line'    => $throwable->getLine(),
 					'VariationId'   => (string)$variation['id']
