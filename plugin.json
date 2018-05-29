@@ -1,7 +1,7 @@
 {
-  "name": "IdealoDEmocaviMOD-V2018",
+  "name": "IdealoDEmocaviMODv2018",
   "description": "This plugin adds the format IdealoDE to the Elastic Export.",
-  "namespace": "IdealoDEmocaviMOD-V2018",
+  "namespace": "IdealoDEmocaviMODv2018",
   "author": "MOCAVI DESiGN SOFTWARE",
   "type": "export",
   "authorIcon": "icon_author_xs.png",
@@ -16,8 +16,8 @@
   "categories": ["3523"],
   "version": "0.1.1",
    "marketplaceName": {
-    "de":"idealo.de - MOCAVI MOD-V2018" ,
-    "en":"idealo.de - MOCAVI MOD-V2018"
+    "de":"idealo.de - MOCAVI MODv2018" ,
+    "en":"idealo.de - MOCAVI MODv2018"
   },
   "require": ["ElasticExport"]
 
