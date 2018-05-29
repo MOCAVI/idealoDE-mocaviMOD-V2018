@@ -27,7 +27,7 @@ class ElasticExportIdealoDEServiceProvider extends ServiceProvider
     public function boot(ExportPresetContainer $exportPresetContainer)
     {
         $exportPresetContainer->add(
-            'IdealoDE-Plugin',
+            'IdealoDE-Plugin-MOCAVI-MODv2018',
             'ElasticExportIdealoDE\ResultField\IdealoDE',
             'ElasticExportIdealoDE\Generator\IdealoDE',
             '',

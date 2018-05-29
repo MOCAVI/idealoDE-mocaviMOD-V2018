@@ -1,5 +1,8 @@
 
 
+MOCAVI Mod Version v0.1.2 (2018-05-29)
+Split in neue Resository MOCAVI-MODv2018
+Nuer Name bei Format zweckst Unterscheidung zu dem orginal Plugin
 
 MOCAVI Mod Version v0.1.1 (2018-05-08)  
 implementation Idealo MIN Preis Spalte für Idealo Repricer
