@@ -9,7 +9,7 @@ use Plenty\Plugin\ServiceProvider;
  * Class ElasticExportIdealoDEServiceProvider
  * @package ElasticExportIdealoDE
  */
-class ElasticExportIdealoDEServiceProvider extends ServiceProvider
+class ElasticExportIdealoDEv2ServiceProvider extends ServiceProvider
 {
     /**
      * Function for registering the service provider.

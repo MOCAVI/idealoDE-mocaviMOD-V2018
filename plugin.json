@@ -1,11 +1,11 @@
 {
-  "name": "IdealoDEmocaviMODv2018",
+  "name": "ElastikExportIdealoDEmocaviMODv2",
   "description": "This plugin adds the format IdealoDE to the Elastic Export.",
-  "namespace": "IdealoDEmocaviMODv2018",
+  "namespace": "IdealoDEmocaviMODv2",
   "author": "MOCAVI DESiGN SOFTWARE",
   "type": "export",
   "authorIcon": "icon_author_xs.png",
-  "serviceProvider": "ElasticExportIdealoDEv2\\ElasticExportIdealoDEServiceProviderv2",
+  "serviceProvider": "ElasticExportIdealoDEv2\\ElasticExportIdealoDEv2ServiceProvider",
   "license": "GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007",
   "pluginIcon": "icon_plugin_md.png",
   "price": 0.00,
@@ -14,7 +14,7 @@
     "en": "MOCAVI MOD - This plugin adds the format IdealoDE-Plugin-MOCAVI-MODv2018 to the Elastic Export."
   },
   "categories": ["3523"],
-  "version": "0.1.4",
+  "version": "0.1.5",
    "marketplaceName": {
     "de":"idealo.de - MOCAVI MODv2018" ,
     "en":"idealo.de - MOCAVI MODv2018"
