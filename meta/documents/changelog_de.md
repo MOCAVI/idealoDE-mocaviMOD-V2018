@@ -1,3 +1,7 @@
+MOCAVI MOD v0.1.7 (2018-07-18)
+Namenskonflikt -> Rückbau auf original Plugin idealoDE.php in Generator als einzige gemoddet + plugin.json
+Auf basis des Idealo original Plugin Version 1.1.6
+
 MOCAVI Mod Version v0.1.5 (2018-05-29)
 ElasticExportIdealoDEv2 "v2" wegen Namenskonflikten mit dem original plugin BUGS repair
 

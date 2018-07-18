@@ -1,13 +1,13 @@
 <?php
 
-namespace ElasticExportIdealoDEv2\Generator;
+namespace ElasticExportIdealoDE\Generator;
 
 use ElasticExport\Helper\ElasticExportCoreHelper;
 use ElasticExport\Helper\ElasticExportPriceHelper;
 use ElasticExport\Helper\ElasticExportShippingHelper;
 use ElasticExport\Helper\ElasticExportStockHelper;
 use ElasticExport\Services\FiltrationService;
-use ElasticExportIdealoDEv2\Helper\PropertyHelper;
+use ElasticExportIdealoDE\Helper\PropertyHelper;
 use Plenty\Modules\DataExchange\Contracts\CSVPluginGenerator;
 use Plenty\Modules\Helper\Services\ArrayHelper;
 use Plenty\Modules\Helper\Models\KeyValue;
@@ -184,12 +184,12 @@ class IdealoDE extends CSVPluginGenerator
 				// Log the amount of the elasticsearch result once
 				if($shardIterator == 1)
 				{
-					$this->getLogger(__METHOD__)->addReference('total', (int)$resultList['total'])->info('ElasticExportIdealoDEv2::item.esResultAmount');
+					$this->getLogger(__METHOD__)->addReference('total', (int)$resultList['total'])->info('ElasticExportIdealoDE::item.esResultAmount');
 				}
 
 				if(count($resultList['error']) > 0)
 				{
-					$this->getLogger(__METHOD__)->addReference('failedShard', $shardIterator)->error('ElasticExportIdealoDEv2::item.occurredElasticSearchErrors', [
+					$this->getLogger(__METHOD__)->addReference('failedShard', $shardIterator)->error('ElasticExportIdealoDE::item.occurredElasticSearchErrors', [
 						'error message' => $resultList['error'],
 					]);
 				}
@@ -340,7 +340,7 @@ class IdealoDE extends CSVPluginGenerator
 			}
 			catch (\Throwable $throwable)
 			{
-				$this->getLogger(__METHOD__)->error('ElasticExportIdealoDEv2::item.fillRowError', [
+				$this->getLogger(__METHOD__)->error('ElasticExportIdealoDE::item.fillRowError', [
 					'error message' => $throwable->getMessage(),
 					'error line'    => $throwable->getLine(),
 					'VariationId'   => (string)$variation['id']
@@ -619,7 +619,7 @@ class IdealoDE extends CSVPluginGenerator
 				'warranty'          => '',
 				'price'             => $priceList['price'],
 				'price_old' 		=> $priceList['price_old'],
-				'repricer_min'		=> number_format($priceList['price_70'], 2, '.', ''),
+				'repricer_min'		=> $priceList['price_70'],
             	'gutschein_text' 	=> $gutschein_text,
             	'gutschein_datum'	=> $gutschein[6],
             	'gutschein_rabatt'	=> $gutschein[5],
@@ -796,7 +796,7 @@ class IdealoDE extends CSVPluginGenerator
 		return [
 			'price' => $price,
 			'price_old' => $rrp,
-			'price_70' => number_format($p70,2,'.',''),
+			'price_70' => $p70,
 			'currency' => $currency
 		];
 	}

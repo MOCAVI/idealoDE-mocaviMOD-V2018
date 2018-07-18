@@ -1,6 +1,6 @@
 <?php
 
-namespace ElasticExportIdealoDEv2\Helper;
+namespace ElasticExportIdealoDE\Helper;
 
 use Plenty\Modules\Item\Property\Contracts\PropertyMarketReferenceRepositoryContract;
 use Plenty\Modules\Item\Property\Contracts\PropertyNameRepositoryContract;
@@ -238,7 +238,7 @@ class PropertyHelper
 
             $this->itemPropertyCache[$variation['data']['item']['id']] = $list;
 
-            $this->getLogger(__METHOD__)->debug('ElasticExportIdealoDEv2::item.variationPropertyList', [
+            $this->getLogger(__METHOD__)->debug('ElasticExportIdealoDE::item.variationPropertyList', [
                 'ItemId'        => $variation['data']['item']['id'],
                 'VariationId'   => $variation['id'],
                 'PropertyList'  => count($list) > 0 ? $list : 'no properties'

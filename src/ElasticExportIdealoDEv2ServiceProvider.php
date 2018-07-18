@@ -1,6 +1,6 @@
 <?php
 
-namespace ElasticExportIdealoDEv2;
+namespace ElasticExportIdealoDE;
 
 use Plenty\Modules\DataExchange\Services\ExportPresetContainer;
 use Plenty\Plugin\ServiceProvider;
@@ -9,7 +9,7 @@ use Plenty\Plugin\ServiceProvider;
  * Class ElasticExportIdealoDEServiceProvider
  * @package ElasticExportIdealoDE
  */
-class ElasticExportIdealoDEv2ServiceProvider extends ServiceProvider
+class ElasticExportIdealoDEServiceProvider extends ServiceProvider
 {
     /**
      * Function for registering the service provider.
@@ -27,9 +27,9 @@ class ElasticExportIdealoDEv2ServiceProvider extends ServiceProvider
     public function boot(ExportPresetContainer $exportPresetContainer)
     {
         $exportPresetContainer->add(
-            'IdealoDE-Plugin-MOCAVI-MODv2018',
-            'ElasticExportIdealoDEv2\ResultField\IdealoDE',
-            'ElasticExportIdealoDEv2\Generator\IdealoDE',
+            'IdealoDE-Plugin',
+            'ElasticExportIdealoDE\ResultField\IdealoDE',
+            'ElasticExportIdealoDE\Generator\IdealoDE',
             '',
             true,
             true

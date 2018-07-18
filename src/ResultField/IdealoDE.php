@@ -1,6 +1,6 @@
 <?php
 
-namespace ElasticExportIdealoDEv2\ResultField;
+namespace ElasticExportIdealoDE\ResultField;
 
 use Cache\Util\Key;
 use Plenty\Modules\Cloud\ElasticSearch\Lib\ElasticSearch;
@@ -50,7 +50,9 @@ class IdealoDE extends ResultFields
 
         $reference = $settings->get('referrerId') ? $settings->get('referrerId') : self::IDEALO_DE;
 
-        $this->setOrderByList(['item.id', ElasticSearch::SORTING_ORDER_ASC]);
+        $this->setOrderByList([
+        	'path' => 'item.id',
+			'order' => ElasticSearch::SORTING_ORDER_ASC]);
 
         $itemDescriptionFields = ['texts.urlPath', 'texts.lang'];
         $itemDescriptionFields[] = ($settings->get('nameId')) ? 'texts.name' . $settings->get('nameId') : 'texts.name1';
@@ -104,7 +106,7 @@ class IdealoDE extends ResultFields
         /**
          * @var LanguageMutator $languageMutator
          */
-        $languageMutator = pluginApp(LanguageMutator::class, [[$settings->get('lang')]]);
+		$languageMutator = pluginApp(LanguageMutator::class, ['languages' => [$settings->get('lang')]]);
 
         /**
          * @var SkuMutator $skuMutator
