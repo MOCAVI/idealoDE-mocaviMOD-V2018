@@ -14,7 +14,7 @@
     "en": "MOCAVI MOD - This plugin adds the format IdealoDE-Plugin-MOCAVI-MODv2018 to the Elastic Export."
   },
   "categories": ["3523"],
-  "version": "0.1.7",
+  "version": "0.1.8",
    "marketplaceName": {
     "de":"idealo.de - MOCAVI MODv2018" ,
     "en":"idealo.de - MOCAVI MODv2018"
