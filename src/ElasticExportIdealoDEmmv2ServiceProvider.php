@@ -1,6 +1,6 @@
 <?php
 
-namespace ElasticExportIdealoDE;
+namespace ElasticExportIdealoDEmmv2;
 
 use Plenty\Modules\DataExchange\Services\ExportPresetContainer;
 use Plenty\Plugin\ServiceProvider;
@@ -9,7 +9,7 @@ use Plenty\Plugin\ServiceProvider;
  * Class ElasticExportIdealoDEServiceProvider
  * @package ElasticExportIdealoDE
  */
-class ElasticExportIdealoDEServiceProvider extends ServiceProvider
+class ElasticExportIdealoDEmmv2ServiceProvider extends ServiceProvider
 {
     /**
      * Function for registering the service provider.
@@ -28,8 +28,8 @@ class ElasticExportIdealoDEServiceProvider extends ServiceProvider
     {
         $exportPresetContainer->add(
             'IdealoDE-Plugin',
-            'ElasticExportIdealoDE\ResultField\IdealoDE',
-            'ElasticExportIdealoDE\Generator\IdealoDE',
+            'ElasticExportIdealoDEmmv2\ResultField\IdealoDE',
+            'ElasticExportIdealoDEmmv2\Generator\IdealoDE',
             '',
             true,
             true

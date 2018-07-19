@@ -1,3 +1,9 @@
+MOCAVI Mod v0.1.9 (2018-07-19)
+Versuch den Plenty Git Pull Fehler beheben. Vermutung Namenskonflickte mit dem original Plugin.
+Erweiterung "IdealoDE" durch "IdealoDEmmv2"
+
+MOCAVI Mod v0.1.8 (2018-07-19) Versuch - not working
+
 MOCAVI MOD v0.1.7 (2018-07-18)
 Namenskonflikt -> Rückbau auf original Plugin idealoDE.php in Generator als einzige gemoddet + plugin.json
 Auf basis des Idealo original Plugin Version 1.1.6
